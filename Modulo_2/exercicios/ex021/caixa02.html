@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(111, 207, 214);
+            
+            
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: auto
+
+        }
+        nav{
+            background-color: rgb(0, 131, 124);
+            padding: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.467);
+
+
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 4px 12px 2px rgba(0, 0, 0, 0.527);
+            
+       }
+       article{
+        background-color: gray;
+        padding: 10px;
+
+       }
+       article > aside{
+        background-color: rgb(68, 68, 68);
+
+       }
+       footer{
+            background-color: black;
+            margin-top: 10px;
+            margin-left: 0px;
+            margin-bottom: 10px;
+            margin-right: 0px;
+            padding: 10px;
+       }
+       footer > p{
+            margin: 0px;
+
+       }
+       p#rodape{
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bolder;
+       }
+
+        h1{
+            padding-bottom: 10px;
+            padding-top: 0px;
+            margin: 0px;
+
+        }
+
+        nav > a{
+            color: white;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- Campo de cabeçalho do Site -->
+    <header>
+        <h1>Meu site</h1>
+        <nav> <!-- navegação-->
+            <a id="a01" href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <!-- Campo do conteudo principal-->
+    <main>
+        <!-- Tag de Sessão-->
+        <section id="assuntos">
+           <p> Esportes Política Tecnologia </p>
+        </section>
+        <section id="noticias">
+            <!--Artigos-->
+            <article>
+                
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, neque ipsum a, officiis doloribus quidem possimus deserunt ab accusantium voluptates nesciunt eum provident labore! Consequatur aliquam eos nam voluptates velit.</p>
+                <!-- Tag relacionada ao conteudo principal-->
+                <aside>
+                    <p>Artigo Desenvolvido por Fulano de Tal</p>
+                </aside>
+            </article>
+            <article>
+
+
+            </article>
+        </section>
+    </main>
+    <!-- Campo do rodapé do site-->
+    <footer>
+        <p id="rodape">Desenvolvido pelo Ari Junior
+
+        
+    </footer>
+
+
+</body>
+</html>
