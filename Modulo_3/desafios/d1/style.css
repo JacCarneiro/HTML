@@ -22,14 +22,16 @@ header h1{
     color: white;
     text-align: center;
     font-family: 'Passion One', cursive;
-    font-size: 7em;
+    /*text-transform: uppercase; transaforma o texto em letras maiusculas*/
+    font-variant: small-caps; /*as primeirras letras de cada palavra ficam maisuculas maiores do que as demais */
+
     
 }
 header p{
     color: white;
     display: inline;
 }
-header a{
+a{
     color: white;
     text-align: center;
     text-decoration: none;
@@ -37,15 +39,36 @@ header a{
     
 }
 
-section#img01{
-    background: black url(imagens/background001.jpg) center center no-repeat fixed;
-    background-size: 500px;
-    border: 1px solid black;
+a:hover{
+    text-decoration: underline;
+
 }
 
 section{
-    font-family:'Sriracha', cursiva;
-    width: 380px;
-    margin: 35px 0px 0px 25px;
-    font-size: 2em;
+    padding: 10vh 0px 10vh 30px;
+    line-height: 2em;
+
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-variant: small-caps;
+    padding: 10px;
 }
