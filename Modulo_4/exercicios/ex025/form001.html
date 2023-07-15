@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+</head>
+<body>
+    <!--Uso dos Label são as etiquetas que fazem o link com a palavra e o campo
+        Metodos de envio de formulários:
+        - POST: Não mostra os dados enviados na URL, porém é possível identifica-los pelo devtools.
+        - GET: mostra os dados envidaos na URL, usar quando os dados não forem sensiveis, quando o link for compartilhavel, suporta até 3.000 bytes, não envia imagens
+    -->
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off"> <!--Desliga as sugestões de preenchimento-->
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="enviar"></p>
+    </form>
+</body>
+</html>
